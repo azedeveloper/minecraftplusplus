@@ -1,4 +1,4 @@
-SRC_FILES=$(ls *.cpp 2>/dev/null)
+SRC_FILES=$(find . -type f -name "*.cpp")
 
 if [ -z "$SRC_FILES" ]; then
     echo "No .cpp files found in the current directory."
